@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let totalammount = parseInt(prompt("total ammount"));
+      wife = prompt("Wife is Alive or Not : y/n");
+      if (wife=="y") {
+        console.log("Wife is Alive");
+        wife = totalammount / 8;
+      }
+      else if (wife=="n") {
+        console.log("Wife is No More");
+        wife = totalammount * 0;
+      }
+      else {
+        console.log("inavlid");
+      }
+      console.log("Wife ammount " +wife);
+      rammount = totalammount - wife;
+      let totalwife = parseInt(prompt("how many wife"));
+      perwifeammount = wife / totalwife;
+      console.log("per wife ammount " +perwifeammount);
+      console.log("remaining ammount " +rammount);
+      son = parseInt(prompt("How many son"));
+      tdaughter = parseInt(prompt("how many daughters"));
+      if (son>0 && tdaughter>0) {
+        tson = son*2;
+        tsd = tson + tdaughter;
+        perdaughterammount = rammount / tsd;
+        personammount = perdaughterammount * 2; 
+      }
+      else {
+        console.log("invalid");
+      }
+      console.log("per daughter ammount " +perdaughterammount);
+      console.log("per son ammount " +personammount);
+    </script>
+</body>
+</html>

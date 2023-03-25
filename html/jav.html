@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Enter number");
+        result = "";
+        // if (num > 0) {
+        //     result = "Positive";
+        //     if (num %2 == 0) {
+        //         result += " Even";
+        //         if (result){
+        //             result += "You are bad student";
+
+        //         }
+
+
+        //     }
+        //     else {
+        //         result += " Odd";
+        //     }
+        // }
+        // else {
+        //     result = "Negative";
+        //     if (num %2 == 0) {
+        //         result += " Even";
+        //     }
+        //     else {
+        //         result += " Odd";
+        //     }
+        // }
+        result = num > 0 ? "Positive" +(num %2 == 0 ? "Even "+(result ? "You are a good student" : "Bad student") : "Odd ") : "Negative" ;
+         
+        console.log(result);
+       /* console.log(num > 0 ? ("Positive " + (num %2 == 0) ? "Even" : "Odd") : "Negative" + (num %2 == 0) ? "Even" : "Odd"); */
+        
+    </script>
+</body>
+</html>

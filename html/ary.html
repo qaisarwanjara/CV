@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name" id="abc"> Submit </label>
+    <input type="text" id="name" onkeyup="x()">
+    <!-- <h1 id="abc"> Welcome </h1> -->
+    <p id="par"> Welcome </p>
+    <!-- <button id="btn" onclick="button()"> QR </button> -->
+    <script>
+    //     const array = [1, 13, 14, 8, 2, 9, 4]
+    //    const id = document.getElementById("btn");
+    //    console.log(id);
+    //    const className = document.getElementsByName("button");
+    //    console.log(button);
+
+    //    function button(){
+    //    }
+    const el = document.getElementById("name");
+    const p = document.getElementById("par");
+
+    function onkeydown(){
+        p.innerHTML = el.value;
+    }
+    
+    </script>
+</body>
+</html>

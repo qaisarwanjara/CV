@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tmoney=parseInt(prompt("Enter the total money"));
+        totalmembers =parseInt(prompt("how many share holders"));
+        wife=parseInt(prompt("how many wife"));
+        son=parseInt(prompt("how many son"));
+        daughter=parseInt(prompt("how many daughter"));
+        wifeincome = "";
+        eachwife = "";
+        if (wife <= 0) {
+            wifeincome = tmoney * 0;
+    }
+        else {
+            wifeincome = tmoney/8;
+        }
+        rb = tmoney - wifeincome;
+        console.log("Total money is" +tmoney);
+        console.log("wife money is" +wifeincome);
+        console.log("After wife The remaining money is" +rb);
+        dincome = rb * (1/6);
+        console.log("daughter money" +dincome);
+        sonincome = rb * (2/6);
+        console.log("son money" +sonincome);
+        tmembers = "";
+        tmembers = wife + son + daughter;
+        console.log("Total members are " +tmembers);
+    </script>
+</body>
+</html>

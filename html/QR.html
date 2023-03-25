@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pdays = parseInt(prompt("Enter present day"));
+        bdays = parseInt(prompt("Enter Birth day"));
+        pmonth = parseInt(prompt("Enter present month"));
+        bmonth = parseInt(prompt("Enter Birth month"));
+        pyear = parseInt(prompt("Enter present year"));
+        byear = parseInt(prompt("Enter Birth year"));
+        const year = 12;
+        const month = 30;
+        const weeks = 7;
+        ansyears = "";
+        ansmonth = "";
+        ansday = "";
+       totalmonth = "";
+       totaldays = "";
+       totalweeks = "";
+       totaldays = "";
+
+
+         if (pdays < bdays) {
+            ansday = (pdays + 30) - bdays;
+            pmonth--;
+            
+         }
+         else {
+            ansday = pdays - bdays;
+         }
+         console.log("Your days is " +ansday);
+         if (pmonth < bmonth) {
+            ansmonth = (pmonth + 12) - bmonth;
+            pyear--;
+         }
+         else {
+            ansmonth = pmonth - bmonth;
+         }
+         console.log("Your month is " +ansmonth);
+         ansyears = pyear - byear;
+         console.log("Your years is " +ansyears);
+
+         totalmonth = (ansyears * 12) + ansmonth;
+         console.log(totalmonth);
+         totalweeks = (totalmonth * 4);
+         console.log(totalweeks);
+         totaldays = (ansyears * 12) + (ansmonth * 30) + ansday;
+         console.log(totaldays);
+
+
+        
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = parseInt(prompt("Enter Number"));
+        let num = 0;
+        let i = 1;
+        while (x <= 1000) {
+            while (i<=x /2) {
+            i++;
+            if (x % i ==0) {
+                num=1;
+                break;
+            }
+        i++;
+        }
+        if(num == 0){
+            console.log("Prime No "+x);
+        }
+            else {
+            console.log("Not Prime "+x);
+        }
+        break;
+        }
+    </script>
+</body>
+</html>

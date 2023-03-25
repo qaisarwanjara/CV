@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            background-color: darkgoldenrod;
+        }
+       .main{
+            background-color: rgb(202, 206, 206);
+            height: 450px;
+            width: 450px;
+            text-align: center;
+        }
+        h1{
+            font-style: italic;
+        }
+        input{
+            padding: 10px;
+        }
+        .bt{
+            height: 50px;
+            width: 150px;
+            background: rgb(231, 159, 50);
+            margin: auto;
+        }
+        button{
+            height: 50px;
+            width: 60px;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="p">
+    <div class="main">
+        <h1>Javascript Calculator</h1>
+    <input type="number" id="No.1" value="">
+    <input type="number" id="No.2" value=""> <br> <br>
+    
+   
+    <!-- <button id="result" onclick="result()"> Result: </button> -->
+    <div id="demo" class="bt"> </div>
+
+    <button id="result" onclick="Sum()"> + </button>
+    <button id="result" onclick="Sub()"> - </button> <br>
+    <button id="result" onclick="Mul()"> * </button>
+    <button id="result" onclick="Div()"> / </button>
+    <button id="result" onclick="Mod()"> % </button>
+
+
+        <script>
+function Sum(){
+    let x = document.getElementById("No.1");
+    let y = document.getElementById("No.2");
+    let z = parseInt(x.value) + parseInt(y.value);
+    document.getElementById("demo").innerHTML = z;
+}
+function Sub(){
+    let x = document.getElementById("No.1");
+    let y = document.getElementById("No.2");
+    let z = x.value - y.value;
+    document.getElementById("demo").innerHTML = z;
+}
+function Mul(){
+    let x = document.getElementById("No.1");
+    let y = document.getElementById("No.2");
+    let z = x.value * y.value;
+    document.getElementById("demo").innerHTML = z;
+}
+function Div(){
+    let x = document.getElementById("No.1");
+    let y = document.getElementById("No.2");
+    let z = x.value / y.value;
+    document.getElementById("demo").innerHTML = z;
+}
+        </script>
+    </div>
+</div>
+</body>
+</html>
